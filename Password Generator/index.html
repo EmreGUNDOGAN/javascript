@@ -1,0 +1,80 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter&family=Karla&display=swap"
+      rel="stylesheet"
+    />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Random Password Generator</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <!-- container -->
+    <div class="container">
+      <!-- header -->
+      <header>
+        <h1 class="main-title">
+          Generate a <br />
+          <span class="colored-title"> random password</span>
+          <p class="par title-par">Never use an insecure password again.</p>
+        </h1>
+      </header>
+      <!-- end of header -->
+      <!-- button -->
+      <div class="generator-settings">
+        <div class="button">
+          <button id="generate-btn" class="btn" onclick="generatePassword()">
+            <i id="icon" class="fa fa-bolt fa-lg"></i>
+            Generate Passwords</button
+          ><!-- end of button-->
+        </div>
+        <!-- slide container -->
+        <div class="slidecontainer">
+          <input
+            type="range"
+            min="5"
+            max="20"
+            value="3"
+            class="slider"
+            id="myRange"
+          />
+          <p class="slide-text"><span id="demo"></span></p>
+        </div>
+        <!-- end of slidecontainer-->
+        <!-- end of generator-settings -->
+      </div>
+
+      <!-- generated-passwords-->
+      <div class="generated-passwords">
+        <!-- passwords-group-first -->
+        <div class="passwords-group-first">
+          <div class="password" id="passwordFirst-El">...</div>
+          <div class="password" id="passwordSecond-El">...</div>
+        </div>
+        <!-- end of passwords-group-first -->
+        <!-- passwords-group-second-->
+        <div class="passwords-group-second">
+          <div class="password" id="passwordThird-El">...</div>
+          <div class="password" id="passwordFourth-El">...</div>
+        </div>
+        <!-- end of passwords-group-second-->
+      </div>
+      <!-- end of generated-passwords-->
+    </div>
+    <!-- end of container-->
+
+    <script src="index.js"></script>
+  </body>
+</html>
