@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter&family=Open+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <title>Unit Converter</title>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1 class="main-title">Metric/Imperial unit conversation</h1>
+        <input
+          id="converted-number-input"
+          type="number"
+          oninput="convert(this.value)"
+          placeholder="0"
+        />
+      </header>
+      <div class="main-content">
+        <div class="sub-datas">
+          <h2 class="subtitle">Lenght (Meter/Feet)</h2>
+          <div class="datas">
+            <p class="units" id="meters">0 meters = 0.000 feet</p>
+
+            <p class="units" id="feets">0 feets = 0.000 meters</p>
+          </div>
+        </div>
+        <div class="sub-datas">
+          <h2 class="subtitle">Volume (Liters/Gallons)</h2>
+          <div class="datas">
+            <p class="units" id="liters">0 liters = 0.000 gallons</p>
+
+            <p class="units" id="gallons">0 gallons = 0.000 liters</p>
+          </div>
+        </div>
+        <div class="sub-datas">
+          <h2 class="subtitle">Mass (Kilograms/Pounds)</h2>
+          <div class="datas">
+            <p class="units" id="kilos">0 kilos = 0.000 pounds</p>
+
+            <p class="units" id="pounds">0 pounds = 0.000 kilos</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
