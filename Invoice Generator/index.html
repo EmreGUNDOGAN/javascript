@@ -8,58 +8,64 @@
   </head>
   <body>
     <header>
-      <h1></h1>
-      <p></p>
+      <h1 class="main-title">Invoice Creator</h1>
+      <p class="sub-par">Thanks for choosing GoodCorp, LLC!</p>
     </header>
+
     <!-- Container -->
     <div class="container">
+
       <!-- main-buttons -->
       <div class="main-buttons">
-        <button id="washCardEl"></button>
-        <button id="mowLawnEl"></button>
-        <button id="pullWeedsEl"></button>
+        <button id="washCardEl">Wash Car: $10</button>
+        <button id="mowLawnEl">Mow Lawn: $20</button>
+        <button id="pullWeedsEl">Pull Weeds: $30</button>
       </div>
       <!-- end of main-buttons -->
+
       <!-- tasks -->
       <div class="tasks-section">
+
         <!-- subtitles -->
         <div class="subtitles">
-          <h2></h2>
-          <h2></h2>
+          <h2 class="subtitle">Tasks</h2>
+          <h2 class="subtitle">Total</h2>
         </div>
         <!-- end of subtitles -->
+
         <!-- task details -->
         <div class="task-details">
-          <p id="taskFirst"></p>
-          <p id="totalFirst"></p>
+          <p id="taskFirst">Wash Car</p>
+          <p id="totalFirst">$10</p>
         </div>
         <div class="task-details">
-          <p id="taskSecond"></p>
-          <p id="totalSecond"></p>
+          <p id="taskSecond">Mow Lawn</p>
+          <p id="totalSecond">$20</p>
         </div>
         <div class="task-details">
-          <p id="taskThird"></p>
-          <p id="totalThird"></p>
+          <p id="taskThird">Pull Weeds</p>
+          <p id="totalThird">$30</p>
         </div>
-        <!-- end of task-details -->
-      </div>
     </div>
     <!-- end of tasks-section -->
+
     <!--  cash-out -->
     <div class="cash-out">
-      <div class="notes">
-        <p class="notes"></p>
+
+      <div class="notes-section">
+        <h3 class="notes">NOTES</h3>
         <br />
-        <p class="notes-details"></p>
+        <p class="notes-details">We accept cash, credit card, or PayPal
+        </p>
         <!-- end of notes -->
       </div>
       <!-- total-cost -->
       <div class="total-cost">
-        <p class="total-amount"></p>
-        <p id="payment"></p>
-        <!-- end of total-cst -->
+        <h3 class="total-amount">TOTAL AMOUNT</h3>
+        <p id="payment">$60</p>
+        <!-- end of total-cost -->
       </div>
-      <button id="sendBtn"></button>
+      <button id="sendBtn">send invoice</button>
       <!-- end of cash-out -->
     </div>
     <!-- end of Container -->
