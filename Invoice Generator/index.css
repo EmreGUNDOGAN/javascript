@@ -6,6 +6,7 @@ body {
   margin: 0;
   font-family: "Inter", sans-serif;
   line-height: 1.6;
+  background-color: #dedede;
 }
 
 :root {
@@ -45,7 +46,7 @@ body {
 
 .btn {
   font-size: 0.875rem;
-  font-weight: 500;
+  font-weight: 700;
   color: var(--sub-color);
 }
 
@@ -90,6 +91,7 @@ body {
   margin: 0 auto;
   margin-top: 2em;
   max-width: 34.375rem;
+  box-shadow: 10px 10px #105267;
 }
 
 header {
@@ -116,3 +118,69 @@ header {
   margin: 0 auto;
 }
 
+.main-buttons {
+  display: flex;
+  justify-content: space-between;
+}
+
+.btn {
+  background-color: var(--secondary-color);
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  padding: 0.875rem 1.125rem;
+  border-radius: 7px;
+  border: 0;
+}
+
+.subtitles,
+.task-details {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.subtitles {
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+}
+
+.task-details {
+  margin-bottom: 1rem;
+}
+
+.task-details p {
+  margin: 0;
+}
+
+.tasks-section {
+  border-bottom: 2px solid #c3c6db;
+  margin-bottom: 1.5rem;
+}
+
+.total-cost {
+  margin-bottom: 2em;
+}
+
+.cash-out {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+#payment {
+  display: flex;
+  justify-content: flex-end;
+  margin: 0;
+  font-size: 2.25rem;
+}
+
+#sendBtn {
+  background-color: var(--header-bg-color);
+  margin-bottom: 2em;
+  width: 100%;
+  padding: 0.75em 0;
+  font-weight: 500;
+  letter-spacing: 1px;
+  border: 0;
+  border-radius: 7px;
+}
