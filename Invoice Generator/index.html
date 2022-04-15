@@ -6,6 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Invoice Generator</title>
     <link rel="stylesheet" href="index.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <header>
@@ -17,9 +21,9 @@
     <div class="container">
       <!-- main-buttons -->
       <div class="main-buttons">
-        <button id="washCardEl">Wash Car: $10</button>
-        <button id="mowLawnEl">Mow Lawn: $20</button>
-        <button id="pullWeedsEl">Pull Weeds: $30</button>
+        <button class="btn" id="washCardEl">Wash Car: $10</button>
+        <button class="btn" id="mowLawnEl">Mow Lawn: $20</button>
+        <button class="btn" id="pullWeedsEl">Pull Weeds: $30</button>
       </div>
       <!-- end of main-buttons -->
 
@@ -34,16 +38,16 @@
 
         <!-- task details -->
         <div class="task-details">
-          <p id="taskFirst">Wash Car</p>
-          <p id="totalFirst">$10</p>
+          <p class="task-title" id="taskFirst">Wash Car</p>
+          <p class="task-total" id="totalFirst">$10</p>
         </div>
         <div class="task-details">
-          <p id="taskSecond">Mow Lawn</p>
-          <p id="totalSecond">$20</p>
+          <p class="task-title" id="taskSecond">Mow Lawn</p>
+          <p class="task-total" id="totalSecond">$20</p>
         </div>
         <div class="task-details">
-          <p id="taskThird">Pull Weeds</p>
-          <p id="totalThird">$30</p>
+          <p class="task-title" id="taskThird">Pull Weeds</p>
+          <p class="task-total" id="totalThird">$30</p>
         </div>
       </div>
       <!-- end of tasks-section -->
