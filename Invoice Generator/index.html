@@ -23,9 +23,15 @@
         <div class="main-container">
           <!-- main-buttons -->
           <div class="main-buttons">
-            <button class="btn" id="washCardEl">Wash Car: $10</button>
-            <button class="btn" id="mowLawnEl">Mow Lawn: $20</button>
-            <button class="btn" id="pullWeedsEl">Pull Weeds: $30</button>
+            <button class="btn" id="washCarBtn" onclick="washCarRender()">
+              Wash Car: $10
+            </button>
+            <button class="btn" id="mowLawnBtn" onclick="mowLawnRender()">
+              Mow Lawn: $20
+            </button>
+            <button class="btn" id="pullWeedsBtn" onclick="pullWeedsRender()">
+              Pull Weeds: $30
+            </button>
           </div>
           <!-- end of main-buttons -->
 
@@ -39,17 +45,17 @@
             <!-- end of subtitles -->
 
             <!-- task details -->
-            <div class="task-details">
-              <p class="task-title" id="taskFirst">Wash Car</p>
-              <p class="task-total" id="totalFirst">$10</p>
+            <div class="task-details detailFirst">
+              <p class="task-title" id="taskWashCar"></p>
+              <p class="task-total" id="totalFirst"></p>
             </div>
-            <div class="task-details">
-              <p class="task-title" id="taskSecond">Mow Lawn</p>
-              <p class="task-total" id="totalSecond">$20</p>
+            <div class="task-details detailSecond">
+              <p class="task-title" id="taskMowLawn"></p>
+              <p class="task-total" id="totalSecond"></p>
             </div>
-            <div class="task-details">
-              <p class="task-title" id="taskThird">Pull Weeds</p>
-              <p class="task-total" id="totalThird">$30</p>
+            <div class="task-details detailThird">
+              <p class="task-title" id="taskPullWeeds"></p>
+              <p class="task-total" id="totalThird"></p>
             </div>
           </div>
           <!-- end of tasks-section -->
@@ -67,7 +73,7 @@
             <!-- total-cost -->
             <div class="total-cost">
               <h3 class="total-amount">TOTAL AMOUNT</h3>
-              <p id="payment">$60</p>
+              <p id="payment"></p>
               <!-- end of total-cost -->
             </div>
             <!-- invoice -->
@@ -86,5 +92,6 @@
 
       <!-- end of Container -->
     </div>
+    <script src="index.js"></script>
   </body>
 </html>

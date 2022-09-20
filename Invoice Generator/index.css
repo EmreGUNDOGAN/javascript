@@ -145,7 +145,7 @@ header {
 }
 
 .task-details {
-  margin-bottom: 1rem;
+  margin-bottom: .5rem;
 }
 
 .task-details p {
@@ -183,4 +183,15 @@ header {
   letter-spacing: 1px;
   border: 0;
   border-radius: 7px;
+}
+
+div:empty {
+  display: none;
+}
+
+
+div:empty {
+  transform: scale(0);
+  margin: 0;
+  padding: 0;
 }
