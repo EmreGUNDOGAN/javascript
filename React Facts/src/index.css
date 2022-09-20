@@ -1,0 +1,87 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Inter", sans-serif;
+}
+
+.container {
+  width: 50%;
+  margin-inline: auto;
+  margin-top: 3em;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #21222a;
+  padding-top: 2em;
+  padding-bottom: 2em;
+}
+
+.logo--holder {
+  display: flex;
+  gap: 0.25em;
+  color: #61dbfb;
+  padding-left: 1em;
+}
+
+.logo {
+  height: 50px;
+  align-self: center;
+}
+
+.project--count {
+  color: #deebf8;
+  padding-right: 1em;
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+
+ul ::marker {
+  color: #61dbfb;
+  font-size: 1.4em;
+}
+
+.main--content {
+  margin: 0;
+  background-color: #282d35;
+  padding-bottom: 6em;
+  background-image: url(./icons/react-icon-large.png);
+  background-repeat: no-repeat;
+  background-position: right;
+}
+
+.title {
+  margin: 0;
+  color: white;
+  font-size: 2.75rem;
+  margin-left: 1em;
+  padding-top: 1.75em;
+  margin-bottom: 1em;
+  font-weight: 700;
+  letter-spacing: -0.05em;
+}
+
+.main--ul {
+  font-size: 1.25rem;
+  color: white;
+  margin-left: 2em;
+  width: 60%;
+}
+
+.main--ul > li {
+  padding-block: 10px;
+}
+
+h1 {
+  font-size: 1.75rem;
+  font-weight: 700;
+}
