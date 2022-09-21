@@ -1,8 +1,127 @@
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
 }
 
-html, body {
+html,
+body {
   margin: 0;
   padding: 0;
+  font-family: "Inter", sans-serif;
+  background-color: #e5e5e5;
+}
+
+.container {
+  width: 30%;
+  margin-inline: auto;
+  background-color: #1a1b21;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+.image--holder {
+  background-image: url(./images/photo.jpg);
+  height: 350px;
+  background-repeat: none;
+  background-size: cover;
+}
+
+.info {
+  text-align: center;
+  color: white;
+}
+
+.user--name {
+  font-size: 2rem;
+  margin-top: 21px;
+  margin-bottom: 0;
+  font-weight: 700;
+}
+
+.user--title {
+  font-size: 1.1rem;
+  margin-top: 7px;
+  font-weight: 400;
+  color: #f3bf99;
+}
+
+.user--website {
+  font-size: 0.8rem;
+  margin: 0;
+  font-weight: 400;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  gap: 1.25em;
+  margin-top: 2em;
+}
+
+.button {
+  border: 5px;
+  font-size: 1.2em;
+  padding: 0.6em 1.8em;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+.emailBtn {
+  background-color: #d1d5db;
+  font-weight: 500;
+  text-decoration: none;
+  color: black;
+}
+
+.linkedInBtn {
+  background-color: #5093e2;
+  color: white;
+  font-weight: 500;
+}
+
+.main {
+  width: 80%;
+  margin-inline: auto;
+  color: white;
+  margin-top: 2em;
+  margin-bottom: 2.5em;
+  display: flex;
+  flex-direction: column;
+}
+
+.main--title {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.main--par {
+  line-height: 1.4;
+  margin-top: 10px;
+  margin-top: -10px;
+}
+
+.links {
+  display: flex;
+  justify-content: center;
+  gap: 2em;
+  background-color: #161619;
+  padding-top: 1.5em;
+  padding-bottom: 1.5em;
+}
+
+.link {
+  height: 30px;
+  border-radius: 5px;
+}
+
+.github-link {
+  height: 30px;
+  border-radius: 5px;
 }
