@@ -5,8 +5,8 @@ export default function Buttons() {
     <div className="buttons">
       <a
         className="button linkedInBtn"
-        target="_blank"
         href="https://www.linkedin.com/in/gundoganemre/"
+        target="_blank"
       >
         LinkedIn
       </a>

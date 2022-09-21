@@ -13,7 +13,7 @@ body {
 }
 
 .container {
-  width: 30%;
+  max-width: 450px;
   margin-inline: auto;
   background-color: #1a1b21;
   position: absolute;
