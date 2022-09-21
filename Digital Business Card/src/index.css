@@ -6,30 +6,38 @@
 
 html,
 body {
+  display: grid;
+  place-content: center;
+  height: 100vh;
   margin: 0;
   padding: 0;
   font-family: "Inter", sans-serif;
   background-color: #e5e5e5;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+.photo {
+  background-image: url(/images/photo.jpg);
+  height: 300px;
+  background-repeat: none;
+  background-size: cover;
+}
+
 .container {
   max-width: 450px;
   margin-inline: auto;
   background-color: #1a1b21;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
   border-radius: 15px;
   overflow: hidden;
-}
-
-.image--holder {
-  background-image: url(./images/photo.jpg);
-  height: 350px;
-  background-repeat: none;
-  background-size: cover;
 }
 
 .info {
@@ -88,23 +96,20 @@ body {
 
 .main {
   width: 80%;
-  margin-inline: auto;
   color: white;
-  margin-top: 2em;
-  margin-bottom: 2.5em;
-  display: flex;
-  flex-direction: column;
+  margin: 3em auto;
 }
 
 .main--title {
   font-size: 1.5rem;
   font-weight: 700;
+  margin-bottom: 0.75em;
 }
 
 .main--par {
   line-height: 1.4;
-  margin-top: 10px;
   margin-top: -10px;
+  margin-bottom: 2.5em;
 }
 
 .links {
