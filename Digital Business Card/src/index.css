@@ -6,8 +6,8 @@
 
 html,
 body {
-  display: grid;
-  place-content: center;
+  /* display: grid;
+  place-content: center; */
   height: 100vh;
   margin: 0;
   padding: 0;
@@ -38,6 +38,8 @@ p {
   background-color: #1a1b21;
   border-radius: 15px;
   overflow: hidden;
+  margin-top: 2em;
+  margin-bottom: 2em;
 }
 
 .info {
