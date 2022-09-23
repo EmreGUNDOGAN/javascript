@@ -13,7 +13,13 @@ export default function Main(props) {
         <div className="location--holder">
           <img className="location--icon" src={image} alt="" />
           <h3 className="country">{props.item.location}</h3>
-          <a href={props.item.googleMapsUrl} className="map--location"></a>
+          <a
+            href={props.item.googleMapsUrl}
+            className="map--location"
+            target="_blank"
+          >
+            Wiew on Google Maps
+          </a>
         </div>
 
         <h1 className="title">{props.item.title}</h1>

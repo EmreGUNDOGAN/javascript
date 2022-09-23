@@ -97,6 +97,10 @@ picture {
   font-size: 0.64rem;
 }
 
+.map--location{
+    margin-left: 1em;
+}
+
 .map--location {
   font-size: 0.64rem;
   color: #918e9b;
