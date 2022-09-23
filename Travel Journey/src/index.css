@@ -1,0 +1,168 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: inter;
+  background-color: #f7f2f2;
+}
+
+/* Reset margins */
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+p,
+figure,
+picture {
+  margin: 0;
+}
+
+.container {
+  margin-bottom: 2em;
+}
+
+.header {
+  display: flex;
+  height: 55px;
+  background-color: #f55a5a;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+.header--logo {
+  display: inline-block;
+  height: 24px;
+  aspect-ratio: 1;
+  margin-right: 0.25em;
+
+}
+
+.header--title {
+  font-size: 0.904;
+  font-weight: 500;
+}
+
+.main--holder {
+  display: flex;
+  width: 97%;
+  margin-top: 2em;
+  margin-inline-start: auto;
+}
+
+.image--holder {
+  width: 35%;
+}
+
+.image {
+  width: 100%;
+  height: 175px;
+  border-radius: 5px;
+}
+
+.journey--details {
+  padding-left: 0.75em;
+  width: 65%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  justify-items: center;
+  padding-right: 0.5em;
+}
+
+.location--holder {
+  display: flex;
+  margin-bottom: 0.25em;
+}
+
+.location--icon {
+  display: inline-block;
+  align-self: center;
+  height: 10px;
+  margin-right: 2px;
+}
+
+.country {
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 400;
+  font-size: 0.64rem;
+}
+
+.map--location {
+  font-size: 0.64rem;
+  color: #918e9b;
+}
+
+.title {
+  font-size: 1.563rem;
+  font-weight: 700;
+  color: #2b283a;
+  margin-bottom: 0.3em;
+  line-height: 1.1;
+}
+
+.date {
+  font-size: 0.64rem;
+  font-weight: 700;
+  margin-bottom: 0.5em;
+  color: #2b283a;
+}
+
+.journey--text {
+  font-size: 0.64rem;
+  height: 60px;
+  overflow-y: scroll;
+  scrollbar-width: thin;
+  line-height: 1.3;
+}
+
+@media screen and (min-width: 856px) {
+  .main--holder {
+    width: 60%;
+    margin-inline: auto;
+  }
+
+  .header--title {
+    font-size: 1.5rem;
+  }
+
+  .image {
+    height: 300px;
+  }
+
+  .journey--details {
+    margin-left: 1.5em;
+    width: 80ch
+  }
+
+  .country,
+  .map--location,
+  .date,
+  .journey--text {
+    font-size: 1rem;
+  }
+
+  .title {
+    font-size: 2rem;
+  }
+
+  .journey--text {
+    overflow-y: visible;
+  }
+}
+
+@media (min-width:856px) and (max-width:1200px){
+  .main--holder {
+    width: 75%;
+    margin-inline: auto;
+  }
+}
