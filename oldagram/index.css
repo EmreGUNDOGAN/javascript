@@ -1,0 +1,149 @@
+/* Box sizing */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Reset margins */
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+p,
+figure,
+picture {
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  font-weight: 400;
+}
+
+body {
+  font-family: "Source Sans Pro", sans-serif;
+  max-width: 375px;
+  margin-inline: auto;
+}
+
+header {
+  max-width: 375px;
+  height: 67px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 11px 0.8em;
+  border-bottom: 1px solid #ededed;
+}
+
+.container {
+  background-color: #ededed;
+}
+
+.user--container {
+  background-color: #ffffff;
+  margin-bottom: 1.563em;
+  padding-top: 1em;
+}
+
+.user-photo {
+  width: 34px;
+  aspect-ratio: 1;
+  border-radius: 50%;
+}
+
+.user--info {
+  display: flex;
+}
+
+.user--details {
+  display: flex;
+  flex-direction: column;
+  margin-left: 0.5em;
+  margin-bottom: 0.688em;
+}
+
+.user--avatar {
+  width: 34px;
+  aspect-ratio: 1;
+  border-radius: 50%;
+}
+
+.user-main-name {
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.user--location {
+  font-size: 12px;
+}
+
+.icons {
+  display: flex;
+  gap: 0.75em;
+  margin-top: 1.2em;
+  margin-bottom: 0.813em;
+  height: 25px;
+  align-items: center;
+}
+
+.like--count {
+  font-size: 0.813em;
+  font-weight: 700;
+  margin-bottom: 12px;
+}
+
+.comment--section {
+  display: flex;
+  gap: 0.4em;
+  padding-bottom: 1em;
+}
+
+.user--name {
+  font-weight: 700;
+  width: 100%;
+}
+
+.user--info,
+.icons,
+.like--count,
+.comment--section {
+  padding-left: 0.75em;
+}
+
+
+.user-main-name,
+.user--name,
+.like-btn,
+.likedBtn {
+  cursor: pointer;
+}
+
+.like-btn {
+  background-image: url(/images/like.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 24px;
+  height: 23px;
+  cursor: pointer;
+}
+
+.likedBtn {
+  width: 24px;
+  height: 23px;
+  aspect-ratio: 1;
+  background-image: url(/images/liked.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  overflow: visible;
+}
