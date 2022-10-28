@@ -64,6 +64,7 @@ header {
 .icon {
   height: 34px;
   width: auto;
+  cursor: pointer;
 }
 
 .dog--container {
@@ -116,6 +117,7 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
+  cursor: pointer;
 }
 
 .button-img {
