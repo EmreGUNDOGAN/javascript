@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Color Generator</title>
+  </head>
+  <body>
+    <div class="container" id="container">
+      <div class="tooltip" id="tooltip">Copied!</div>
+
+      <form>
+        <input type="color" id="colorSeed" value="#0047AB" />
+        <select id="select-mode">
+          <option value="">Select a color scheme mode</option>
+          <option value="monochrome">Monoschrome</option>
+          <option value="monochrome-dark">Monochrome-dark</option>
+          <option value="monochrome-light">Monochrome-light</option>
+          <option value="analogic">Analogic</option>
+          <option value="complement">Complement</option>
+          <option value="analogic-complement">Analogic-complement</option>
+          <option value="triad">Triad</option>
+          <option value="quad">Quad</option>
+        </select>
+
+        <div class="range-container">
+          <label for="range" id="range-count">6</label>
+          <input
+            type="range"
+            id="range"
+            min="3"
+            max="8"
+            oninput="getRangeCountHtml(this.value)"
+          />
+        </div>
+
+        <button id="submit-btn" type="submit">Get color scheme</button>
+      </form>
+      <div class="color-container" id="color-container"></div>
+      <div></div>
+      <p class="clipboard-par">
+        *** Click on color or hex code to copy its value ***
+      </p>
+    </div>
+
+    <script src="index.js"></script>
+  </body>
+</html>
