@@ -1,0 +1,132 @@
+/* ------------------- */
+/* Reset               */
+/* ------------------- */
+
+/* https://piccalil.li/blog/a-modern-css-reset/ */
+
+/* Box sizing */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Reset margins */
+body {
+  background-color: #e5e5e5;
+  margin: 0;
+  font-family: "Inter", sans-serif;
+
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+select,
+button {
+  font-family: inherit;
+}
+
+.container {
+  text-align: center;
+  background-color: #ffffff;
+  border-radius: 3px;
+  padding-top: 0.25em;
+}
+
+.color-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  align-content: center;
+}
+
+.color {
+  width: 100px;
+  height: 500px;
+}
+
+#colorSeed {
+  height: 34px;
+  width: 51px;
+  background-color: #e5e5e5;
+  border: none;
+  border-radius: 2px;
+  cursor: pointer;
+}
+
+form {
+  display: flex;
+  justify-content: center;
+  gap: 1em;
+  padding: 1em;
+}
+
+#select-mode {
+  width: 312px;
+  height: 34px;
+  border: 1px solid #d1d5db;
+  border-radius: 5px;
+  padding: 0 0.5em;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+#submit-btn {
+  border-radius: 5px;
+  border: 1px solid #d1d5db;
+  background-color: transparent;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+#submit-btn:hover {
+  transform: scale(1.01);
+}
+
+#hexCode {
+  font-weight: 500;
+  font-size: 12px;
+  letter-spacing: 0.5px;
+}
+
+.range-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+#range-count {
+  font-size: 16px;
+  padding-right: 0.25em;
+  font-weight: 500;
+}
+
+#range {
+  width: 50px;
+}
+
+.tooltip {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #ffffff;
+  padding: 0.5em 1em;
+  border-radius: 8px;
+  text-transform: uppercase;
+  display: none;
+  transition: display ease-in-out 250ms;
+}
+
+.clipboard-par {
+  background-color: #5f5656;
+  color: #ffffff;
+  font-size: 10px;
+  margin: 0;
+  padding: 0.5em;
+  letter-spacing: 0.5px;
+}
