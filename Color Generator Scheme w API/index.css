@@ -47,6 +47,7 @@ button {
 .color {
   width: 100px;
   height: 500px;
+  cursor: pointer;
 }
 
 #colorSeed {
@@ -91,6 +92,7 @@ form {
   font-weight: 500;
   font-size: 12px;
   letter-spacing: 0.5px;
+  cursor: pointer;
 }
 
 .range-container {
