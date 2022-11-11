@@ -26,14 +26,14 @@ fetch("https://api.coingecko.com/api/v3/coins/bitcoin")
   .then((data) => {
     document.getElementById("coinData").innerHTML = `
     <div class="coin-name-holder">
-    <img src="${data.image.small}">
-    <p class="coin-name"> ${data.name} </p>
+      <img src="${data.image.small}" />
+      <p class="coin-name">${data.name}</p>
     </div>
 
     <div class="coin-stats">
-    <p class="stat"><span> 🏷️ </span> $${data.market_data.current_price.usd.toFixed()}</p>
-    <p class="stat"><span> 📈 </span> $${data.market_data.high_24h.usd.toFixed()}</p>
-    <p class="stat"><span> 📉 </span> $${data.market_data.low_24h.usd.toFixed()}</p>
+      <p class="stat"><span> 🏷️ </span> $${data.market_data.current_price.usd.toFixed()}</p>
+      <p class="stat"><span> 📈 </span> $${data.market_data.high_24h.usd.toFixed()}</p>
+      <p class="stat"><span> 📉 </span> $${data.market_data.low_24h.usd.toFixed()}</p>
     </div>
     `;
   })
@@ -52,6 +52,7 @@ function getCurrentTime() {
 
 setInterval(getCurrentTime, 1000);
 
+//get location data and fetch
 navigator.geolocation.getCurrentPosition((position) => {
   fetch(
     `https://apis.scrimba.com/openweathermap/data/2.5/weather?lat=${position.coords.latitude}&lon=${position.coords.longitude}&units=metric`
@@ -65,20 +66,18 @@ navigator.geolocation.getCurrentPosition((position) => {
     .then((data) => {
       const iconUrl = `http://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`;
       document.getElementById("weather").innerHTML = `
-      <div  class="weather-degree">
-        <img src=${iconUrl} class="weather-icon"></img>
-        <p class="degree">${data.main.temp.toFixed()}°</p>
-      </div>
-        <p class="location weather-details">${data.name}</p>
-        <p class="humidity weather-details">${data.main.humidity}</p>
+    <div class="weather-degree">
+      <img src="${iconUrl}" class="weather-icon" </img>
+      <p class="degree">${data.main.temp.toFixed()}°</p>
+    </div>
+    <p class="location weather-details">${data.name}</p>
+    <p class="humidity weather-details">${data.main.humidity}</p>
        
         `;
     });
 });
-{
-  /* <p class="weather-details">Humidity: ${data.main.humidity}</p>; */
-}
 
+//get quotes
 fetch("https://api.quotable.io/random")
   .then((res) => {
     if (!res.ok) {
