@@ -26,7 +26,7 @@ picture {
 }
 
 .container {
-  margin-bottom: 2em;
+  padding-bottom: 2em;
 }
 
 .header {
@@ -43,7 +43,6 @@ picture {
   height: 24px;
   aspect-ratio: 1;
   margin-right: 0.25em;
-
 }
 
 .header--title {
@@ -97,8 +96,8 @@ picture {
   font-size: 0.64rem;
 }
 
-.map--location{
-    margin-left: 1em;
+.map--location {
+  margin-left: 1em;
 }
 
 .map--location {
@@ -145,7 +144,7 @@ picture {
 
   .journey--details {
     margin-left: 1.5em;
-    width: 80ch
+    width: 80ch;
   }
 
   .country,
@@ -164,7 +163,7 @@ picture {
   }
 }
 
-@media (min-width:856px) and (max-width:1200px){
+@media (min-width: 856px) and (max-width: 1200px) {
   .main--holder {
     width: 75%;
     margin-inline: auto;
