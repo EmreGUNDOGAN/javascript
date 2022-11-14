@@ -1,0 +1,110 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+
+
+}
+
+.container{
+    width:95%;
+    margin-inline: auto;
+
+}
+
+.header{
+  height: 70px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 2em;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 0px -2px, rgba(0, 0, 0, 0.1) 0px 4px 0px -3px;
+}
+
+.logo{
+  height:25px;
+  width: 82px;
+  aspect-ratio: 1;
+}
+
+.hero--photo{
+  display: block;
+  align-items: center;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.hero--container{
+  margin-bottom: 3em;
+}
+
+.hero--container > h1{
+  margin: 0;
+  margin-top: 1em;
+  
+}
+
+.hero--container > p {
+  width: 35ch;
+}
+
+.cards-container{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2em;
+  padding-bottom: 2em;
+}
+
+.card{
+  position: relative;;
+  width: 175px;          
+  display: flex;    
+  flex-direction: column;
+  font-size: 0.75rem;
+}
+
+.sold-badge{
+  position: absolute;
+  background-color: #fff;
+  top: 5px;
+  left: 5px;
+  padding: 6px 5px;
+  font-weight: 500;
+  border-radius: 5px;
+}
+
+.user-image{
+  border-radius: 9px;
+}
+
+.stats{
+  display: flex;
+  gap: 0.25em;
+  margin-top: 9px;
+  margin-bottom: 8px;
+}
+
+.star-icon{
+  width: 14px;
+  aspect-ratio: 1;
+}
+
+.bold {
+  font-weight: bold;;
+}
+
+.gray{
+  color: rgba(145, 142, 155, 1)
+}
+
+.card--title{
+  margin: 0;
+  margin-bottom: 8px;
+}
+
+.card--price{
+  margin: 0;
+}
