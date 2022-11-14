@@ -58,7 +58,7 @@ picture {
 }
 
 .image--holder {
-  width: 35%;
+  width: 25%;
 }
 
 .image {
@@ -79,19 +79,21 @@ picture {
 
 .location--holder {
   display: flex;
+  align-items: center;
   margin-bottom: 0.25em;
 }
 
 .location--icon {
   display: inline-block;
   align-self: center;
-  height: 10px;
+  height: 20px;
   margin-right: 2px;
 }
 
 .country {
   text-transform: uppercase;
-  letter-spacing: 1px;
+  letter-spacing: 0.75px;
+  vertical-align: center;
   font-weight: 400;
   font-size: 0.64rem;
 }
@@ -109,7 +111,7 @@ picture {
   font-size: 1.563rem;
   font-weight: 700;
   color: #2b283a;
-  margin-bottom: 0.3em;
+  margin: 0.3em 0;
   line-height: 1.1;
 }
 
