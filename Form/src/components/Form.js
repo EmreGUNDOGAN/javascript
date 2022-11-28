@@ -28,7 +28,7 @@ export default function Form(){
             alert("Successfully signed up");
             console.log("Successfully signed up");
         } else {
-            alert("Passwords does not match!");
+            alert("Passwords do not match!");
             console.log("Passwords do not match!")
         }
 
