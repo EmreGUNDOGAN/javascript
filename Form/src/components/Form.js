@@ -29,7 +29,7 @@ export default function Form(){
             console.log("Successfully signed up");
         } else {
             alert("Passwords does not match!");
-            console.log("Passwords does not match!")
+            console.log("Passwords do not match!")
         }
 
         if (formData.isChecked) {
