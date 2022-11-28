@@ -31,6 +31,10 @@ export default function Form(){
             alert("Passwords does not match!");
             console.log("Passwords does not match!")
         }
+
+        if (formData.isChecked) {
+          console.log("Thanks for signing up for our newsletter!");
+        }
     }
 
 
