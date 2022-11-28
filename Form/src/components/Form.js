@@ -11,7 +11,7 @@ export default function Form(){
         isChecked: true
     }
         )
-        console.log(formData);
+        
     function handleChange(event){
         const {name, value, type, checked} = event.target
         setFormData(prevForm => {
