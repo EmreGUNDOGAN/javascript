@@ -1,0 +1,193 @@
+$bodyBackground: #121212
+$textBackground: #3a3b3c
+$textColor: #e4e6eb
+$titleColor: #b0b3b8
+$borderColor: #e4e6eb
+$titleBorderColor: #b0b3b8
+
+
+*
+   box-sizing: border-box
+   
+img 
+   max-width: 100%
+   min-height: auto
+   display: block
+
+body 
+   margin: 0
+   box-sizing: border-box
+   font-family: 'Lato', sans-serif
+   background-color: $bodyBackground
+   color: $textColor
+
+
+   
+.container
+   width: 50%
+   margin-inline: auto
+   margin-top: 4em
+   
+.card-container
+   width: 100%
+   margin-top: 0.5em
+   border-radius: 15px
+   background-color: $bodyBackground
+
+.countryName
+   text-align: center
+   color: $textColor
+   font-weight: 900
+   margin: 0
+
+.flag-Container 
+   text-align: center
+   padding-bottom: 1em
+      
+
+.flag
+   display: block
+   margin-inline: auto
+   border-radius: 10px
+   width: 400px
+
+   // demographics
+
+.country-demographics
+   display: flex
+   flex-wrap: wrap
+   justify-content: center
+   align-items: center
+   padding: 0 1em
+   gap: 0.4em
+   width: fit-content
+   max-width: 90%
+   margin-inline: auto
+   margin-top: 1em
+   background: $textBackground
+   border-radius: 15px
+   box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23)
+
+
+   p
+      display: flex
+      flex-direction: column
+      gap: 0.25em
+      font-size: 1rem
+      text-align: center
+      padding: 0.25em
+      color: $textColor
+
+   span
+      border-bottom: 1px solid $titleBorderColor
+      padding-bottom: 0.1em
+      font-size: 1.25rem
+      font-weight: 600
+      color: $titleColor
+      
+
+   //country-location
+
+.country-location
+      display: flex
+      align-items: center
+      justify-content: space-around
+      padding: 0.25em
+      margin-top: 1em
+
+.continent-container
+   display: flex
+   flex-wrap: wrap
+   justify-content: center
+   width: 90%
+   gap: 1em
+   
+   p
+      display: flex
+      flex-direction: column
+      gap: 0.25em
+      margin: 0
+      font-size: 1rem
+      text-align: center
+      background-color: $textBackground
+      padding: 1em
+      border-radius: 10px
+      box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23)
+      color: $textColor
+      
+      
+      span
+         border-bottom: 1px solid +$titleBorderColor
+         font-size: 1.25rem
+         text-align: center
+         font-weight: 600
+         margin: 0
+         color: $titleColor
+         
+
+   //country bottom
+
+.country-bottom
+   display: flex
+   justify-content: space-between   
+   width: 25%
+   margin-inline: auto
+   margin-top: 2em
+   margin-bottom: 2em
+   padding-bottom: 2em
+
+.coatOfArmy-container
+   display: flex
+   flex-direction: column
+   width: 100%
+   text-align: center
+   border: 1px solid #292929
+   padding: 2em
+   border-radius: 10px
+
+   h3
+      margin: 0
+      margin-bottom: 1em
+      font-size: 1.5rem
+
+form
+   display: flex  
+   align-items: center
+   justify-content: center
+   width: 60%
+   margin-inline: auto
+   margin-bottom: 2em
+
+
+input
+   display: flex
+   width: 80%
+   border-radius: 5px
+   padding: 10px 10px
+   border: none
+   color: $titleColor
+   box-shadow: 0px 5px 10px $bodyBackground
+
+   &:focus
+      outline: none
+      color: black
+
+   &:active
+      outline: none
+      color: black
+   
+button
+   margin: -10px
+   border: none
+   border-radius: 0 5px 5px 0
+   background-color: $textBackground
+   color: $textColor
+   padding: 10px 30px
+   cursor: pointer
+   box-shadow: 0px 5px 0px  $bodyBackground
+
+   &:hover
+      background-color: #2EE59D
+      box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4)
+      color: #fff
+      
