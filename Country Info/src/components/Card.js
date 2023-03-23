@@ -1,4 +1,4 @@
-// import React from 'react';
+  import React from 'react';
 
 export default function Card(props) {
 
@@ -11,7 +11,7 @@ export default function Card(props) {
       <div className="country-demographics">
         <p>
           <span>Capital </span>
-          {props.country.capital}{" "}
+          {props.country.capital}
         </p>
         <p>
           <span>Population</span>
@@ -69,7 +69,7 @@ export default function Card(props) {
       </div>
 
       <div className="country-bottom">
-        {/* <p>{Object.values(props.country.maps)[0]}</p> */}
+
         <div className="coatOfArmy-container">
           <h3>Coat of Army</h3>
           <img src={Object.values(props.country.coatOfArms)[0]} alt="Coat of Arms" />
