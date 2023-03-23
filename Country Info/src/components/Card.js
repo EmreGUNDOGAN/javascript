@@ -1,7 +1,6 @@
-  import React from 'react';
+import React from "react";
 
 export default function Card(props) {
-
   return (
     <div className="card-container">
       <div className="flag-Container">
@@ -65,11 +64,9 @@ export default function Card(props) {
             {props.country.timezones.join(", ")}
           </p>
         </div>
-
       </div>
 
       <div className="country-bottom">
-
         <div className="coatOfArmy-container">
           <h3>Coat of Army</h3>
           <img src={Object.values(props.country.coatOfArms)[0]} alt="Coat of Arms" />
@@ -78,5 +75,3 @@ export default function Card(props) {
     </div>
   );
 }
-
-
