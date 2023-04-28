@@ -19,10 +19,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Random Password Generator</title>
     <link rel="stylesheet" href="index.css" />
+
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+        <script src="http://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css"
   </head>
-  <body>
+  <body> 
     <!-- container -->
-    <div class="container">
+    <div class="container">      
+      <p class="copy-warning"> click to copy text </p>
       <!-- header -->
       <header>
         <h1 class="main-title">
@@ -58,36 +63,36 @@
 
       <!-- generated-passwords-->
       <div class="generated-passwords">
-        <!-- passwords-group-first -->
-        <div class="passwords-group-first tooltip">
-          <p class="password " id="passwordFirst-El" onclick="myFunction(this)">
-            ...
-             <!-- <span class="tooltiptext" onclick="deneme(this)">Copy</span> -->
+        <!-- passwords -->
+        <div class="passwords-holder tooltip">
+              <p class="password" 
+              id="passwordFirst-El" 
+              onclick="myFunction(this)">
+          ...
           </p>
-          <p class="password" id="passwordSecond-El" onclick="myFunction(this)">
-            ...
-            <!-- <span class="tooltiptext myTooltipBot" onclick="deneme(this)">Copy</span> -->
+          
+          <p class="password" id="passwordSecond-El"  
+              onclick="myFunction(this)">
+                ..
+          </p>            
+      
+          <p class="password" id="passwordThird-El" 
+              onclick="myFunction(this)">
+              ...
           </p>
-        </div>
-        <!-- end of passwords-group-first -->
-        <!-- passwords-group-second-->
-        <div class="passwords-group-second tooltip">
-          <p class="password" id="passwordThird-El" onclick="myFunction(this)">
-            ...
-            <!-- <span class="tooltiptext myTooltipBot" onclick="deneme(this)">Copy</span> -->
-          </p>
-          <p class="password" id="passwordFourth-El"  onclick="myFunction(this)">
-            ...
-            <!-- <span class="tooltiptext" onclick="deneme(this)">Copy</span> -->
-          </p>
-        </div>
+
+          <p class="password" 
+                id="passwordFourth-El"  
+                onclick="myFunction(this)">
+                ...
+          </p>            
+          </div>
         <!-- end of passwords-group-second-->
       </div>
       <!-- end of generated-passwords-->
-      <p class="copy-warning"> click to copy text </p>
     </div>
     <!-- end of container-->
-
     <script src="index.js"></script>
+
   </body>
 </html>
