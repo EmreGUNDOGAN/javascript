@@ -4,8 +4,12 @@
 }
 
 body {
-  background-color: rgb(107, 68, 68);
+  margin: 0;
+  height: 100vh;
   font-family: "Karla", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /* ===============
@@ -38,8 +42,8 @@ Layout
   max-width: 800px;
   margin: 0 auto;
   border-radius: 3px;
-  margin-top: 10em;
   border: 5px solid #5b826f;
+  border-radius: 10px;
 }
 
 header {
@@ -64,6 +68,7 @@ header {
 
 .password {
   background-color: #273549;
+  cursor: pointer;
 }
 
 .button {
@@ -117,6 +122,13 @@ header {
   width: 90%;
 }
 
+.copy-warning{
+  text-align: right;
+  font-size: 12px;
+  color: white;
+  padding: 0 2em 2em 0
+}
+
 /* Range Slider */
 
 .slide-text {
@@ -155,9 +167,8 @@ header {
 .slider::-webkit-slider-thumb {
   -webkit-appearance: none;
   appearance: none;
-  width: 25px;
-  height: 25px;
-  border-radius: 50%;
+  width: 10px;
+  height: 20px;
   background: #04aa6d;
   cursor: pointer;
 }
@@ -186,17 +197,34 @@ header {
   padding: 5px;
   position: absolute;
   z-index: 1;
-  bottom: 150%;
+  bottom: 100%;
   left: 50%;
   margin-left: -75px;
   opacity: 0;
   transition: opacity 0.3s;
 }
 
-.tooltip .tooltiptext::after {
+.myTooltipBot{
+  visibility: hidden;
+  width: 140px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px;
+  position: absolute;
+  z-index: 1;
+  bottom: 10%!important;
+  left: 50%;
+  margin-left: -75px;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.tooltip .tooltiptext::after, .myTooltipBot::after {
   content: "";
   position: absolute;
-  top: 100%;
+  top: 50%;
   left: 50%;
   margin-left: -5px;
   border-width: 5px;
@@ -207,9 +235,4 @@ header {
 .tooltip:hover .tooltiptext {
   visibility: visible;
   opacity: 1;
-}
-
-#icon {
-  margin-right: 3px;
-  font-weight: 900;
 }
