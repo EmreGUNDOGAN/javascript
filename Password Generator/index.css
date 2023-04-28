@@ -38,6 +38,7 @@ Layout
 
 .container {
   background: #1f2937;
+  position: relative;
   width: 80%;
   max-width: 800px;
   margin: 0 auto;
@@ -67,6 +68,7 @@ header {
 }
 
 .password {
+  position: relativew;
   background-color: #273549;
   cursor: pointer;
 }
@@ -93,11 +95,20 @@ header {
   margin-left: 2em;
   padding-bottom: 1em;
   display: flex;
-  flex-wrap: wrap;
   justify-content: space-evenly;
   color: #55f991;
   border-top: 2px solid #5b826f;
   padding-top: 2em;
+}
+
+.passwords-holder{
+  width: 90%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  flex: 50%;
+  padding-bottom: 2em;
 }
 
 .password {
@@ -105,7 +116,6 @@ header {
   height: 40px;
   margin-left: 1em;
   margin-top: 1em;
-  margin-bottom: 2em;
   border-radius: 5px;
   display: flex;
   text-align: center;
@@ -126,7 +136,7 @@ header {
   text-align: right;
   font-size: 12px;
   color: white;
-  padding: 0 2em 2em 0
+  padding: 2em 3em 0em 0;
 }
 
 /* Range Slider */
@@ -181,58 +191,9 @@ header {
   cursor: pointer;
 }
 
-/* Text-Copy */
-.tooltip {
-  position: relative;
-  display: inline-block;
-}
-
-.tooltip .tooltiptext {
-  visibility: hidden;
-  width: 140px;
-  background-color: #555;
-  color: #fff;
-  text-align: center;
-  border-radius: 6px;
-  padding: 5px;
-  position: absolute;
-  z-index: 1;
-  bottom: 100%;
-  left: 50%;
-  margin-left: -75px;
-  opacity: 0;
-  transition: opacity 0.3s;
-}
-
-.myTooltipBot{
-  visibility: hidden;
-  width: 140px;
-  background-color: #555;
-  color: #fff;
-  text-align: center;
-  border-radius: 6px;
-  padding: 5px;
-  position: absolute;
-  z-index: 1;
-  bottom: 10%!important;
-  left: 50%;
-  margin-left: -75px;
-  opacity: 0;
-  transition: opacity 0.3s;
-}
-
-.tooltip .tooltiptext::after, .myTooltipBot::after {
-  content: "";
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  margin-left: -5px;
-  border-width: 5px;
-  border-style: solid;
-  border-color: #555 transparent transparent transparent;
-}
-
-.tooltip:hover .tooltiptext {
-  visibility: visible;
-  opacity: 1;
+#toast-container {
+  top: 0% !important;
+  right: 0% !important;
+  bottom: auto !important;
+  left: auto !important;  
 }
