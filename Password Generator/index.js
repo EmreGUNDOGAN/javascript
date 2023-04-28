@@ -2,9 +2,6 @@ let firstPass = document.getElementById("passwordFirst-El");
 let secondPass = document.getElementById("passwordSecond-El");
 let thirdPass = document.getElementById("passwordThird-El");
 let fourthPass = document.getElementById("passwordFourth-El");
-let copyMsg = document.querySelectorAll(".deneme");
-let isCopied = false
-
 
 // Slide-Continer
 
@@ -20,7 +17,7 @@ slider.oninput = function () {
 const charset = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789!'^+%&/()=?_-*";
 const setLength = slider.value;
 const length = setLength;
-
+let isClicked = false
 
 function generatePassword(){
     let password = ""
@@ -37,9 +34,24 @@ function generatePassword(){
     fourthPass.textContent = divideArr[3];
 }
 
-//Copying value
+//Copying Value
+//Success Message
+
+
 function myFunction(element){
+  toastr.options = {
+    positionClass: "toast-top-center",
+    progressBar: true,
+    showDuration: "200",
+    hideDuration: "1000",
+    timeOut: "2000",
+    extendedTimeOut: "1000",
+    showEasing: "swing",
+    hideEasing: "linear",
+    showMethod: "fadeIn",
+    hideMethod: "fadeOut",
+  };
     let value = element.textContent;
     navigator.clipboard.writeText(value);
+    toastr.success("Copied!");
 }
-
