@@ -1,24 +1,10 @@
-passwordFirstEl = document.getElementById("passwordFirst-El");
-passwordSecondEl = document.getElementById("passwordSecond-El");
-passwordThirdEl = document.getElementById("passwordThird-El");
-passwordFourthEl = document.getElementById("passwordFourth-El");
+let firstPass = document.getElementById("passwordFirst-El");
+let secondPass = document.getElementById("passwordSecond-El");
+let thirdPass = document.getElementById("passwordThird-El");
+let fourthPass = document.getElementById("passwordFourth-El");
+let copyMsg = document.querySelectorAll(".deneme");
+let isCopied = false
 
-// Text-Copy
-
-function myFunction() {
-  /* Get the text field */
-  let copyText = document.getElementById("myInput");
-
-  /* Select the text field */
-  copyText.select();
-  copyText.setSelectionRange(0, 99999); /* For mobile devices */
-
-  /* Copy the text inside the text field */
-  navigator.clipboard.writeText(copyText.value);
-
-  /* Alert the copied text */
-  alert("Copied the text: " + copyText.value);
-}
 
 // Slide-Continer
 
@@ -31,55 +17,29 @@ slider.oninput = function () {
 
 // End of Slide-Container
 
-function generatePassword() {
-  // First Password
-  {
-    let setLength = slider.value;
-    let length = setLength,
-      charset =
-        "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789!'^+%&/()=?_-*",
-      password = "";
-    for (let i = 0, n = charset.length; i < length; ++i) {
-      password += charset.charAt(Math.floor(Math.random() * n));
-    }
-    passwordFirstEl.textContent = password;
-  }
-  
+const charset = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789!'^+%&/()=?_-*";
+const setLength = slider.value;
+const length = setLength;
 
-  // Second Password
-  {
-    let setLength = slider.value;
-    let length = setLength,
-      charset =
-        "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789!'^+%&/()=?_-*",
-      password = "";
-    for (let i = 0, n = charset.length; i < length; ++i) {
-      password += charset.charAt(Math.floor(Math.random() * n));
+
+function generatePassword(){
+    let password = ""
+    for (let i = 0; i < slider.value; i++) {
+      for (let i = 0, n = charset.length; i < length; ++i) {
+        password += charset.charAt(Math.floor(Math.random() * n));
+      }
     }
-    passwordSecondEl.textContent = password;
-  }
-  // Third Password
-  {
-    let setLength = slider.value;
-    let length = setLength,
-      charset =
-        "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789!'^+%&/()=?_-*",
-      password = "";
-    for (let i = 0, n = charset.length; i < length; ++i) {
-      password += charset.charAt(Math.floor(Math.random() * n));
-    }
-    passwordThirdEl.textContent = password;
-  }
-  // Fourth Password
-  {
-    let setLength = slider.value;
-    let length = setLength,
-      charset =
-        "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789!'^+%&/()=?_-*",
-      password = "";
-    for (let i = 0, n = charset.length; i < length; ++i) {
-      password += charset.charAt(Math.floor(Math.random() * n));
-    }
-    passwordFourthEl.textContent = password;
-  }
+    let total = password.length / length
+    let divideArr = password.match(new RegExp(".{0," + total + "}", "g"));
+    firstPass.textContent = divideArr[0];
+    secondPass.textContent = divideArr[1];
+    thirdPass.textContent = divideArr[2];
+    fourthPass.textContent = divideArr[3];
 }
+
+//Copying value
+function myFunction(element){
+    let value = element.textContent;
+    navigator.clipboard.writeText(value);
+}
+
