@@ -15,36 +15,37 @@
     <div class="container">
       <header>
         <h1 class="main-title">Metric/Imperial unit conversation</h1>
-        <input
+        <div class="input-holder">
+          <input
           id="converted-number-input"
           type="number"
           oninput="convert(this.value)"
           placeholder="0"
         />
+        </div>
+
       </header>
       <div class="main-content">
         <div class="sub-datas">
-          <h2 class="subtitle">Lenght (Meter/Feet)</h2>
+          <h2 class="subtitle">Length (Meter/Feet)</h2>
           <div class="datas">
-            <p class="units" id="meters">0 meters = 0.000 feet</p>
-
-            <p class="units" id="feets">0 feets = 0.000 meters</p>
+            <p class="units border" id="meter"> meters = 0 feet</p>
+            <p class="units" id="feet"> feets = 0 meters</p>
           </div>
         </div>
         <div class="sub-datas">
           <h2 class="subtitle">Volume (Liters/Gallons)</h2>
           <div class="datas">
-            <p class="units" id="liters">0 liters = 0.000 gallons</p>
+            <p class="units border" id="liter"> liters = 0 gallons</p>
 
-            <p class="units" id="gallons">0 gallons = 0.000 liters</p>
+            <p class="units" id="gallon"> gallons = 0 liters</p>
           </div>
         </div>
         <div class="sub-datas">
           <h2 class="subtitle">Mass (Kilograms/Pounds)</h2>
           <div class="datas">
-            <p class="units" id="kilos">0 kilos = 0.000 pounds</p>
-
-            <p class="units" id="pounds">0 pounds = 0.000 kilos</p>
+            <p class="units border" id="kilo"> kilos = 0 pounds</p>
+            <p class="units" id="pound"> pounds = 0 kilos</p>
           </div>
         </div>
       </div>
