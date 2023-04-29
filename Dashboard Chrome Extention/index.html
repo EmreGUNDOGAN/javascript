@@ -11,10 +11,12 @@
   </head>
   <body>
     <div class="container">
+
       <div class="top">
-        <div class="coin-container" id="coinData"></div>
         <div class="weather-container" id="weather"></div>
+        <div class="coin-container" id="coinData"></div>
       </div>
+      
 
       <div class="center">
         <p class="time" id="time"></p>
@@ -27,12 +29,7 @@
       </div>
     </div>
 
-    <div class="weather-degree">
-      <img src="${iconUrl}" class="weather-icon" />
-      <p class="degree">${data.main.temp.toFixed()}°</p>
-    </div>
-    <p class="location weather-details">${data.name}</p>
-    <p class="humidity weather-details">${data.main.humidity}</p>
+
 
     <script src="index.js"></script>
   </body>
