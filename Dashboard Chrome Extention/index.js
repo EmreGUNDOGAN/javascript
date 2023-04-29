@@ -29,7 +29,6 @@ fetch("https://api.coingecko.com/api/v3/coins/bitcoin")
       <img src="${data.image.small}" />
       <p class="coin-name">${data.name}</p>
     </div>
-
     <div class="coin-stats">
       <p class="stat"><span> 🏷️ </span> $${data.market_data.current_price.usd.toFixed()}</p>
       <p class="stat"><span> 📈 </span> $${data.market_data.high_24h.usd.toFixed()}</p>
@@ -66,13 +65,24 @@ navigator.geolocation.getCurrentPosition((position) => {
     .then((data) => {
       const iconUrl = `http://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`;
       document.getElementById("weather").innerHTML = `
-    <div class="weather-degree">
+
+
+<div class="weather-degree">
       <img src="${iconUrl}" class="weather-icon" </img>
       <p class="degree">${data.main.temp.toFixed()}°</p>
+</div>
+
+<div class="info-holder">
+    <div class="location-data">
+        <img class="foto" src="/images/location.png" alt="">
+        <p class="location weather-details">${data.name}</p>
     </div>
-    <p class="location weather-details">${data.name}</p>
-    <p class="humidity weather-details">${data.main.humidity}</p>
-       
+
+    <div class="humidity-data">
+        <img class="foto" src="/images/humidity.png" alt="">
+        <p class="humidity weather-details">${data.main.humidity}</p>
+    </div>
+</div>  
         `;
     });
 });
