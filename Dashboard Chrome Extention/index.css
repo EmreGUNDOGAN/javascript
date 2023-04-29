@@ -29,6 +29,7 @@ body {
 
 .top {
   display: flex;
+  flex-direction: row-reverse;
   justify-content: space-between;
 }
 
@@ -42,13 +43,13 @@ body {
   text-align: center;
 }
 
-.coin-container {
+ .coin-container {
   position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-}
+} 
 
 .coin-name-holder {
   display: flex;
@@ -99,9 +100,9 @@ span {
 }
 
 .degree {
-  font-size: 3.5rem;
+  font-size: 4rem;
   margin: 0;
-  margin-left: -10px;
+  margin-left: -25px;
 }
 
 .weather-icon {
@@ -111,30 +112,59 @@ span {
 
 .weather-details {
   font-size: 1.5rem;
-  text-align: center;
   margin: 0;
-  text-align: center;
   margin-bottom: 5px;
 }
 
-.humidity {
-  background: url(/images/humidity.png) 22px no-repeat;
-  text-align: center;
-  padding-left: 0.65em;
-  margin-left: 0.25em;
+
+.info-holder {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-self: end;
+}
+
+
+.location-data {
+  display: flex;
+  align-items: center;
+  align-self: end;
+  gap: 0.25em;
+}
+
+.humidity-data {
+  display: flex;
+  align-self: start;
+  gap: 0.25em;
+}
+
+.foto {
+  width: 25px;
+  height: 25px;
+  margin-bottom: 1em;
+}
+
+.location{
+  margin-bottom: 0.4em;
+}
+
+.weather-icon{
+  width: 125px;
+  height: 125px;
 }
 
 .location {
-  background: url(/images/location.png) 22px no-repeat;
+  /* background: url(/images/location.png) 22px no-repeat; */
   text-align: center;
-  padding-left: 1.7em;
-  margin-left: 0.25em;
+  display: flex;
+  gap: 2em;
 }
 
 .bottom {
   position: relative;
   display: flex;
   align-items: center;
+  margin-bottom: 20px;
   font-size: 1.25rem;
 }
 
@@ -145,5 +175,56 @@ span {
   transform: translate(-50%, -50%);
   font-style: italic;
   text-align: center;
-  margin: 0;
+}
+
+@media (max-width: 890px) {
+  .author {
+  display: none;
+}
+}
+
+
+
+/* &&&&&&&&&&&&&&&&&&&&& */
+/* Style the tab */
+.tab {
+  display: flex;
+  align-items: center;
+  width: fit-content;
+  justify-content: center;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+}
+
+/* Style the buttons that are used to open the tab content */
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 1.5em 3em;
+  transition: 0.3s;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+  background-color: #ccc;
+}
+.holder{
+  position: relative;
+}
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  width: 394px;
+  background-color: red;
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  border-top: none;
 }
